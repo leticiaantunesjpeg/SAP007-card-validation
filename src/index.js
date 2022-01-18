@@ -2,4 +2,4 @@ import validator from './validator.js';
 
 console.log(validator);
 
-alert('Ola!');
+alert('Oi!');
