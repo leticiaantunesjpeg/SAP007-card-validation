@@ -6,11 +6,14 @@
 }
 
 body {
-    height: 100vh;
+    background: url("../gradient.jpg") no-repeat top center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vh;
+    margin-left: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffcad4;
     overflow: hidden;
 }
 
@@ -19,4 +22,26 @@ body {
     backdrop-filter: blur(0.8rem);
     padding: 1.5rem;
     border-radius: 1rem;
+}
+
+#cardNumber {
+    width: 50vh;
+    background: url("Chip.png");
+}
+
+#cardCcv {
+    width: 12vh;
+}
+
+#cardExpiry {
+    width: 15vh;
+}
+
+#name {
+    width: 25vh;
+    margin-right: 25px;
+}
+
+#surname {
+    width: 25vh;
 }
