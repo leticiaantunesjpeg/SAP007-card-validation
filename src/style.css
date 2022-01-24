@@ -20,28 +20,63 @@ body {
 .infos {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.8rem);
-    padding: 1.5rem;
-    border-radius: 1rem;
-}
-
-#cardNumber {
-    width: 50vh;
-    background: url("Chip.png");
-}
-
-#cardCcv {
-    width: 12vh;
-}
-
-#cardExpiry {
-    width: 15vh;
+    padding-right: 1.1rem;
+    padding-left: 1.3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 0rem;
+    border-radius: 0.5rem;
+    font-size: 17px;
 }
 
 #name {
     width: 25vh;
-    margin-right: 25px;
+    margin: 10px;
+    margin-right: 20px;
+    padding: 1.5vh;
+    background: #e7d2ec;
 }
 
 #surname {
     width: 25vh;
+    margin: 10px;
+    padding: 1.5vh;
+    background-color: #e7d2ec;
+}
+
+#cardNumber {
+    width: 55vh;
+    margin: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 1.6vh;
+    background-color: #e7d2ec;
+}
+
+#cardExpiry {
+    width: 15vh;
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: 90px;
+    padding: 1.5vh;
+    background-color: #e7d2ec;
+}
+
+#cardCcv {
+    width: 13vh;
+    margin: 10px;
+    padding: 1.5vh;
+    background-color: #e7d2ec;
+}
+
+#submit{
+    width: 40vh;
+    margin: 20px;
+    margin-left: 130px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: linear-gradient(#d0bcd5, #baabc4, #a499b3, #9c8eac, #9483a4, #836c94, #816991);
+    color: #000000;
+    font-size: 17px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
