@@ -6,11 +6,11 @@ console.log(validator);
 
 //Captura do valor do input pelo botão submit//
 let botão= document.getElementById('submit');
-botão.addEventListener('click', captura, validator);
+botão.addEventListener('click', captura);
 
 function captura(){
-    const numeros = document.getElementById('cardNumber').value;
-    let requisitos = numeros.length;
+    const creditCardNumber = document.getElementById('cardNumber').value;
+    let requisitos = creditCardNumber.length;
     if(requisitos == 0){
         alert('Insira um número');
         return false;
