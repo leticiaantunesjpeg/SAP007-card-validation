@@ -1,22 +1,26 @@
 import validator from './validator.js';
 
-import validator from  './validator.js';
+document.getElementById("submit").addEventListener("click", function()
+    {
+    const valorNúmerodoCartão = document.getElementById("cardNumber").value;
+    const result= validator.isValid(valorNúmerodoCartão)
+    console.log(result)
+   
+    const esconderDígitos = validator.maskify(valorNúmerodoCartão)
+    console.log(esconderDígitos)
 
-console.log(validator);
-
-//Captura do valor do input pelo botão submit//
-let botão= document.getElementById('submit');
-botão.addEventListener('click', captura);
-
-function captura(){
-    const creditCardNumber = document.getElementById('cardNumber').value;
-    let requisitos = creditCardNumber.length;
-    if(requisitos == 0){
-        alert('Insira um número');
-        return false;
+    if (valorNúmerodoCartão == ""){
+        document.getElementById("cardNumber").value=esconderDígitos;
+        document.getElementById("resultado").innerHTML="Insira um número válido";
+    }  
+    else if (result == true){
+        document.getElementById("cardNumber").value=esconderDígitos;
+        document.getElementById("resultadoPositivo").innerHTML="O número do cartão é válido";
     }
-    if(requisitos < 16){
-        alert('Número incompleto');
-        return false;
+    else {
+        document.getElementById("cardNumber").value=esconderDígitos;
+        document.getElementById("resultadoNegativo").innerHTML="O número do cartão é inválido, revise-o";
     }
-}
+    
+    }
+); 
