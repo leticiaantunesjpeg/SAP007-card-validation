@@ -33,14 +33,14 @@ body {
     margin: 10px;
     margin-right: 20px;
     padding: 1.5vh;
-    background: #e7d2ec;
+    background: #D8EFED;
 }
 
 #surname {
     width: 25vh;
     margin: 10px;
     padding: 1.5vh;
-    background-color: #e7d2ec;
+    background-color: #D8EFED;
 }
 
 #cardNumber {
@@ -49,7 +49,7 @@ body {
     margin-top: 15px;
     margin-right: 15px;
     padding: 1.6vh;
-    background-color: #e7d2ec;
+    background-color: #D8EFED;
 }
 
 #cardExpiry {
@@ -58,14 +58,14 @@ body {
     margin-left: 15px;
     margin-right: 90px;
     padding: 1.5vh;
-    background-color: #e7d2ec;
+    background-color: #D8EFED;
 }
 
 #cardCcv {
     width: 13vh;
     margin: 10px;
     padding: 1.5vh;
-    background-color: #e7d2ec;
+    background-color: #D8EFED;
 }
 
 #submit{
@@ -74,7 +74,7 @@ body {
     margin-left: 130px;
     margin-bottom: 25px;
     padding: 15px;
-    background: linear-gradient(#d0bcd5, #baabc4, #a499b3, #9c8eac, #9483a4, #836c94, #816991);
+    background: linear-gradient(#77C6C0, #70C3BD, #53BDBE, #4FB5B6, #4BACAD, #449C9D, #3E8E8F, #388182);
     color: #000000;
     font-size: 17px;
     border-radius: 0.5rem;
@@ -95,7 +95,7 @@ input[type=number]::-webkit-outer-spin-button {
 #resultadoPositivo{
     font-size: 19px;
     color: green;
-    margin-left: 130px;
+    margin-left: 150px;
 }
 
 #resultadoNegativo{
