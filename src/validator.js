@@ -29,14 +29,14 @@ const validator = {
 
   //função de mascarar o número, entre parênteses está o valor do número do cartão
   maskify: (valorNúmerodoCartão) => {
-    valorNúmerodoCartão = valorNúmerodoCartão.split("");
+    valorNúmerodoCartão = valorNúmerodoCartão.split(""); //transforma-se o valor do input de string para array
 
-      for (let i = 0; i < valorNúmerodoCartão.length - 4; i++) {
-        valorNúmerodoCartão[i] = "#";
+      for (let i = 0; i < valorNúmerodoCartão.length - 4; i++) { //enquanto percorre o array, menos os 4 últimos dígitos
+        valorNúmerodoCartão[i] = "#"; //substitui o dígito por "#"
       }
-      let join = valorNúmerodoCartão.join("");
+      let join = valorNúmerodoCartão.join(""); //transforma-se em string de novo
 
-      return join;
+      return join; //e retorna o resultado
     },
 
 };
