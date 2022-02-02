@@ -1,46 +1,44 @@
-
 const validator = {
-  isValid: function(valorNúmerodoCartão){
-     /*variável Carray tranforma a string obtida do input para array*/
-     let Carray = valorNúmerodoCartão.split("");
-    
-     /*variável CarrayInertido reverte a posição do array*/
-     let CarrayInvertido = Carray.reverse();
+  isValid: (valorNúmerodoCartão) => {
+    let numPar = 0;  //variável que vai trabalhar com os números nas posições pares
+    let numImp = 0; //variável que vai trabalhar com os números nas posições ímpares
 
-     /*variável da soma*/
-     let Soma = 0
-
-     /*loop for e condições if para percorrer o array enquanto o indíce for menor que o tamanho do array,
-      localizar as posições pares, multiplicá-las por 2 e subtrair 9 dos dígitos maiores que 9*/
-     for (let i = 0; i < CarrayInvertido.length; i++) {
-      if (i % 2 !== 0) {
-        CarrayInvertido[i] = CarrayInvertido[i] * 2;
-        if (CarrayInvertido[i] > 9) {
-          CarrayInvertido[i] = CarrayInvertido[i] - 9;
-          Soma += CarrayInvertido[i];
+    valorNúmerodoCartão = valorNúmerodoCartão.split("").reverse(); //transormar em array e aplicar o reverse
+    for (let i = 0; i < valorNúmerodoCartão.length; i++) {
+      if (i % 2 === 1) {  //verifica-se se a posição é par, já que o índice começa a contagem do 0 
+        if (valorNúmerodoCartão[i] * 2 >= 10) { //se o número ao ser multiplicado por 2 for >=10,
+          numPar += ((valorNúmerodoCartão[i] * 2) - 9); //diminuir 9
+        } else { //se não, apenas multiplica por dois
+          numPar += valorNúmerodoCartão[i] * 2;
         }
-      }
-    }
 
-    if (Soma % 10 == 0) {//Se o numero for divisivel por 10
-      return true; //então é verdadeiro
+      } else { //para os números de posição ímpar,apenas são armazenados intactos
+        numImp += parseInt(valorNúmerodoCartão[i]);
+      }
+
     }
-    return false; //Se não, falso
+    if ((numPar + numImp) % 10 === 0){ //se a soma dos números ímpares e pares resultar em um número divisivel por 10,
+      return true; //é válido
+    }
+    else { //se não, inválido
+      return false
+    }
 
   },
 
 
   //função de mascarar o número, entre parênteses está o valor do número do cartão
-  maskify: function(valorNúmerodoCartão){
-      const esconderDígitos = Array.from(valorNúmerodoCartão);
-  
-      for (let i = 0; i < esconderDígitos.length - 4; i++) {
-        esconderDígitos[i] = "#";
+  maskify: (valorNúmerodoCartão) => {
+    valorNúmerodoCartão = valorNúmerodoCartão.split("");
+
+      for (let i = 0; i < valorNúmerodoCartão.length - 4; i++) {
+        valorNúmerodoCartão[i] = "#";
       }
-      let join = esconderDígitos.join("");
-  
+      let join = valorNúmerodoCartão.join("");
+
       return join;
     },
-  };
+
+};
 
 export default validator
