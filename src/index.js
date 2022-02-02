@@ -10,6 +10,12 @@ function validar()
    
     const esconderDígitos = validator.maskify(valorNúmerodoCartão)
     console.log(esconderDígitos)
+    if (result === true) {                                    
+        cardNumber.value = esconderDígitos;
+      }                                     //condições criadas para mascarar o valor do input após a validação
+    else (result === false); {
+        cardNumber.value = esconderDígitos;
+    }
 
     if (valorNúmerodoCartão == ""){ //condição para escrever no html caso o input do cardNumber estiver vazio 
         document.getElementById("cardNumber").value;
