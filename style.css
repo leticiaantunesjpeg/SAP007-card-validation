@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cambria';
+}
+
+body {
+    background: url('../gradient.jpg') no-repeat top center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vh;
+    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.infos {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.8rem);
+    padding-right: 1.1rem;
+    padding-left: 1.3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 0rem;
+    border-radius: 0.5rem;
+    font-size: 17px;
+}
+
+#name {
+    width: 25vh;
+    margin: 10px;
+    margin-right: 20px;
+    padding: 1.5vh;
+    background: #D8EFED;
+}
+
+#surname {
+    width: 25vh;
+    margin: 10px;
+    padding: 1.5vh;
+    background-color: #D8EFED;
+}
+
+#cardNumber {
+    width: 55vh;
+    margin: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 1.6vh;
+    background-color: #D8EFED;
+}
+
+#cardExpiry {
+    width: 15vh;
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: 90px;
+    padding: 1.5vh;
+    background-color: #D8EFED;
+}
+
+#cardCcv {
+    width: 13vh;
+    margin: 10px;
+    padding: 1.5vh;
+    background-color: #D8EFED;
+}
+
+#submit{
+    width: 40vh;
+    margin: 20px;
+    margin-left: 130px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: linear-gradient(#77C6C0, #70C3BD, #53BDBE, #4FB5B6, #4BACAD, #449C9D, #3E8E8F, #388182);
+    color: #000000;
+    font-size: 17px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+#resultado{
+    font-size: 19px;
+    margin-left: 160px;
+}
+
+#resultadoPositivo{
+    font-size: 19px;
+    color: green;
+    margin-left: 150px;
+}
+
+#resultadoNegativo{
+    font-size: 19px;
+    color: red;
+    margin-left: 100px;
+}

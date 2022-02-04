@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <html lang='pt-br'></html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Valide seu cartão de crédito</title>
+    <link rel='stylesheet' href='style.css' />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+  </head>
+  <body>
+
+    <!--Aqui abre-se a tag 'form' para acomodação dos inputs-->
+    <form class= infos>
+    <div id='root'>
+      <h2 id=título>Verifique abaixo se seu cartão de crédito é válido</h2>
+    </div><br>
+
+      <label for='name'>Nome:</label>
+      <input type=text id= name class=infos placeholder='Leticia' style='text-align: center'/>
+
+      <label for='surname'>Sobrenome:</label>
+      <input type=text id= surname class=infos placeholder='Antunes' style='text-align: center'/><br>
+
+      <label for='cardNumber'>Número do Cartão:</label>
+      <input type=text id= cardNumber class=infos placeholder='0000-0000-0000-0000' style='text-align: center' maxlength="16"/><br>
+
+      <label for='cardExpiry'>Data de Expiração:</label>
+      <input type=text id= cardExpiry class=infos placeholder='00/00'style='text-align: center'/>
+
+      <label for='cardCcv'>CCV:</label>
+      <input type=text id= cardCcv class=infos placeholder='000' style='text-align: center'/><br>
+
+      <button id= submit type='button' value='Enviar'>Validar</button>
+
+      <!-- divs criadas para exibir mensagens na página-->
+      <div id= resultado></div>
+
+      <div id= resultadoPositivo></div>
+
+      <div id= resultadoNegativo></div>
+    </form>
+
+    <script src='index.js' type='module'></script>
+  </body>
+</html>
