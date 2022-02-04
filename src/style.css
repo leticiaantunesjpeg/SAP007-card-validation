@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('../gradient.jpg') no-repeat top center;
+    background: url("img/gradient.jpg") no-repeat top center;
     background-size: cover;
     height: 90vh;
     width: 100vh;
@@ -83,17 +83,9 @@ body {
 
 #resultado{
     font-size: 19px;
-    margin-left: 160px;
-}
-
-#resultadoPositivo{
-    font-size: 19px;
-    color: green;
     margin-left: 150px;
 }
 
-#resultadoNegativo{
-    font-size: 19px;
-    color: red;
-    margin-left: 100px;
+#root{
+    margin-bottom: 10px;
 }
