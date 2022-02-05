@@ -47,7 +47,7 @@ Números de cartão de crédito disponíveis para teste:
 ---
 ## :computer: Protótipo e UX
 
-![img](./src/img/protótipo.png)
+![img](./src/img/protótipo.PNG)
 
 O protótipo do projeto foi elaborado com a finalidade de manter o usuário em apenas uma página e retornar as informações requisitadas de forma simples e de fácil entendimento. No exemplo do protótipo, há um símbolo :white_check_mark: a ser retornado caso o número do cartão seja válido, e um símbolo :x: caso seja inválido, que foram substituídos com a mensagem em verde ou vermelho.
 
