@@ -6,9 +6,10 @@
 
 * [1. Sobre o projeto](#dart-sobre-o-projeto)
 * [2. Como usar?](#gear-como-usar)
-* [3. Tecnologias](#robot-tecnologias)
+* [3. Protótipo e UX](#computer-protótipo-e-UX)
 * [4. Resultados](#%EF%B8%8F-resultados)
-* [5. Sobre a autora](#woman_technologist-sobre-a-autora)
+* [5. Tecnologias](#robot-tecnologias)
+* [6. Sobre a autora](#woman_technologist-sobre-a-autora)
 
 ---
 ## :dart: Sobre o projeto 
@@ -44,20 +45,28 @@ Números de cartão de crédito disponíveis para teste:
 | MasterCard  | 5485755481460022     |
 
 ---
-## :robot: Tecnologias Utilizadas
+## :computer: Protótipo e UX
 
-- HTML 5
-- CSS3
-- JavaScript
-- Node.js
+![img](./src/img/protótipo.png)
 
----
+O protótipo do projeto foi elaborado com a finalidade de manter o usuário em apenas uma página e retornar as informações requisitadas de forma simples e de fácil entendimento. No exemplo do protótipo, há um símbolo :white_check_mark: a ser retornado caso o número do cartão seja válido, e um símbolo :x: caso seja inválido, que foram substituídos com a mensagem em verde ou vermelho.
+
+O fluxo do usuário é ler a header com a mensagem: "Verifique abaixo se seu cartão de crédito é válido", inserir as informações de pagamento nos inputs e em seguida clicar no botão "validar" em gradiente azul piscina em destaque abaixo. Após o envio das informações, o usuário recebe a mensagem de acordo com as infomações enviadas.
+
 ## ✔️ Resultados
 
 ![img](./src/img/tela1.png)
 ![img](./src/img/tela2.png)
 ![img](./src/img/tela3.png)
 ![img](./src/img/tela4.png)
+
+---
+## :robot: Tecnologias Utilizadas
+
+- HTML 5
+- CSS3
+- JavaScript
+- Node.js
 
 ---
 ## :woman_technologist: Sobre a autora
